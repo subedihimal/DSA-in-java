@@ -20,10 +20,15 @@ public class Main{
         System.out.println(); 
     }
     public void inputoutput(){
-
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a Number:");
+        int a = input.nextInt();
+        input.close();
+        System.out.println("Input Number is " + a);
     }
     public static void main(String[] args){
         Main obj = new Main();
         obj.datatypes();
+        obj.inputoutput();
     }
 }
