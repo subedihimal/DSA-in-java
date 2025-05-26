@@ -1,8 +1,8 @@
 package lecture.class1;
 import java.util.Scanner;
 
-public class Main{
-    public void datatypes(){
+public class Datatypes{
+    public void datatypess(){
         byte g = 3;          //8 bit smaill integer
         short h = 13;      //16 bit integer
         int a = 1;           // 32 bit
@@ -27,8 +27,8 @@ public class Main{
         System.out.println("Input Number is " + a);
     }
     public static void main(String[] args){
-        Main obj = new Main();
-        obj.datatypes();
+        Datatypes obj = new Datatypes();
+        obj.datatypess();
         obj.inputoutput();
     }
 }

@@ -1,7 +1,6 @@
-package lecture.class1.assignment;
 import java.util.Scanner;
 
-public class Main {
+public class Assignment1 {
     Scanner input = new Scanner(System.in);
 
     //1.Write a program to print whether a number is even or odd, also take input from the user.
@@ -38,7 +37,7 @@ public class Main {
     }
     
     public static void main(String[] args){
-        Main obj = new Main();
+        Assignment1 obj = new Assignment1();
         obj.oddeven();
         obj.greeting();
         obj.simpleIntrest();
