@@ -40,7 +40,6 @@ public class Problems {
     
 
     }
-
     //Second Largest and Largest Element
     public void sLarge(){
         int arr[] = {2,3,6,8,11};
