@@ -1,4 +1,6 @@
-package lecture.class2;
+package lecture.class3;
+
+import java.util.Arrays;
 
 public class Array {
    public static void main(String[] args) {
@@ -18,6 +20,20 @@ public class Array {
         // If NOT assigned, it DOES NOT print garbage like in C++.
         // In Java, arrays of primitives are automatically initialized:
         // for int arrays, uninitialized elements default to 0.
+        
+
+        //Finding min or max value
+        int min = Integer.MIN_VALUE;
+        int max = Integer.MAX_VALUE;
+        System.out.println("\n MIN AND MAX VALUE OF THE INT" + min + " " + max + "\n");
+
+
+        //Pre Defined Syntax to get min or max value
+        int[] numbers = {12, 45, 67, 23, 89, 5, 38};
+        int min1 = Arrays.stream(numbers).min().getAsInt();
+        int max1 = Arrays.stream(numbers).max().getAsInt();
+        System.out.println("Minimum value in array: " + min1 + " Max value in array: " + max1 + "\n");
+
 
         System.out.println("Static Array:");
 
