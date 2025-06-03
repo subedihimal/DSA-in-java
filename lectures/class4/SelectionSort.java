@@ -1,6 +1,14 @@
 package lectures.class4;
 
 public class SelectionSort {
+
+     // THEORY - SELECTION SORT
+    // Step 1: Find the smallest element in the entire array, swap it with the first element.
+    // Step 2: Find the smallest element (excluding the first position), swap it with the second element.
+    // Step 3: Find the smallest element (excluding the first two position), swap it with the third element.
+    // Continue this process until the array is fully sorted.
+
+
     //My Try
     public void sSort() {
         int arr[] = { 9, 7, 3, 1, 6 };
