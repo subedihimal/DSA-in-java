@@ -59,7 +59,6 @@ public class SelectionSort {
         for(int n: arr){
             System.out.println(n);
         }
-
     }
     public static void main(String[] args) {
         SelectionSort obj = new SelectionSort();
