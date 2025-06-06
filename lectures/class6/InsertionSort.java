@@ -70,8 +70,13 @@ public class InsertionSort {
     for (int n : arr) {
         System.out.println(n);
     }
-}
-
+    }
+    
+    //Insertion try again
+    public void sort3(){
+        int arr[] = {7, 4, 2, 3, 5};
+        
+    }
      
     public static void main(String[] args) {
         InsertionSort obj = new InsertionSort();

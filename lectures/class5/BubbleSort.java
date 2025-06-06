@@ -33,9 +33,9 @@ public class BubbleSort{
 
 
     public void sort1(){
-        int arr[] = {1,4,8,5,3};
+        int arr[] = {1,4,8,5,4};
         int last = arr.length-1;
-        while(last >= 0){
+        while(last >= 0){  
             for(int i = 0; i<last; i++){
                 if(arr[i]>arr[i+1]){
                     int temp = arr[i];
@@ -51,11 +51,57 @@ public class BubbleSort{
         }
     }
 
+    //Buble sort Backwards
+    public void sort2(){
+        int arr[] = {1,4,8,5,3};
+        for(int i= 0 ; i < arr.length ; i++){
+            boolean swap = false;
+            for(int j = arr.length-1; j>i; j--){
+                if(arr[j-1]>arr[j]){
+                    int temp = arr[j];
+                    arr[j] = arr[j-1];
+                    arr[j-1] = temp;
+                    swap = true;
+                }
+            }
+            if(!swap){
+                break;
+            }
 
+        }
+        for(int n: arr){
+            System.out.println(n);
+        }
+    }
 
+    //Decreasing Order
+    public void sort3(){
+        int arr[] = {1,4,8,5,3};
+
+        for(int i= arr.length-2; i>=0; i--){
+            for(int j=0; j<=i;j++){
+                boolean swap = false;
+                if(arr[j]<arr[j+1]){
+                    int temp = arr[j+1];
+                    arr[j+1] = arr[j];
+                    arr[j] = temp;
+                    swap = true;
+                }
+                if(!swap){
+                    break;
+                }
+
+            }
+
+        }
+        for(int n: arr){
+            System.out.println(n);
+        }
+
+    }
     public static void main(String[] args) {
         BubbleSort obj = new BubbleSort();
-        obj.sort1();
+        obj.sort3();
         
     }
 
