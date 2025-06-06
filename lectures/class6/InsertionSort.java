@@ -29,59 +29,54 @@ public class InsertionSort {
     // Final sorted array:
     // 2 3 4 5 7
 
-    //My Solution
-    public void sort1(){
-        int arr[] = {7, 4, 2, 3, 5};
+    // My Solution
+    public void sort1() {
+        int arr[] = { 7, 4, 2, 3, 5 };
 
-        for(int i=0; i<arr.length-1; i++){
+        for (int i = 0; i < arr.length - 1; i++) {
             Boolean status = true;
-            int j = i;        
-            while(status == true && j>=0 ){
-                if(arr[j]>arr[j+1]){
+            int j = i;
+            while (status == true && j >= 0) {
+                if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;  
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                     status = true;
-                    j--;                  
-                   
-                }else{
+                    j--;
+
+                } else {
                     status = false;
                 }
             }
         }
-        for(int n: arr){
+        for (int n : arr) {
             System.out.println(n);
         }
     }
-    //The status FLAG CAN COMPLETELY BE REMOVED
-    public void sort2() {
-    int arr[] = {7, 4, 2, 3, 5};
 
-    for (int i = 0; i < arr.length - 1; i++) {
-        int j = i;
-        while (j >= 0 && arr[j] > arr[j + 1]) {
-            int temp = arr[j];
-            arr[j] = arr[j + 1];
-            arr[j + 1] = temp;
-            j--;
+    // The status FLAG CAN COMPLETELY BE REMOVED
+    public void sort2() {
+        int arr[] = { 7, 4, 2, 3, 5 };
+
+        for (int i = 0; i < arr.length - 1; i++) {
+            int j = i;
+            while (j >= 0 && arr[j] > arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+                j--;
+            }
+        }
+
+        for (int n : arr) {
+            System.out.println(n);
         }
     }
 
-    for (int n : arr) {
-        System.out.println(n);
-    }
-    }
-    
-    //Insertion try again
-    public void sort3(){
-        int arr[] = {7, 4, 2, 3, 5};
-        
-    }
-     
     public static void main(String[] args) {
         InsertionSort obj = new InsertionSort();
         obj.sort1();
-        
+
     }
-    
+
 }
