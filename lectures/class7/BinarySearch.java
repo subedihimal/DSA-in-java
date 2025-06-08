@@ -1,7 +1,7 @@
 package lectures.class7;
 
 public class BinarySearch {
-    public void Search1(){
+    public void search1(){
         int arr[] = {3, 7, 11, 12, 17, 20, 23, 27, 29};
         int start =0; int end = arr.length-1; 
         int search = 7;
@@ -19,9 +19,31 @@ public class BinarySearch {
         }
 
     }
+
+    public void search2(){
+        int arr[] = {38,28,20,16,4};
+        int start = 0; int end = arr.length-1;
+        int search = 21;
+
+        while(start<=end){
+            int midvalue = start + (end-start/2);
+
+            if(arr[midvalue] == search){
+                System.out.println(midvalue);
+                break;
+            }else if (arr[midvalue]<search){
+                end = midvalue-1;
+            }else if(arr[midvalue]>search){
+                start = midvalue+1;
+            }
+        }
+        if(start>end){
+            System.out.println("Not in array");
+        }
+    }
     public static void main(String[] args) {
         BinarySearch obj = new BinarySearch();
-        obj.Search1();
+        obj.search2();
         
     }
     
