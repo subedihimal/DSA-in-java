@@ -46,6 +46,7 @@ public class InsertionSort {
 
                 } else {
                     status = false;
+                    // break;  CAN JUST USE BREAK
                 }
             }
         }
@@ -54,7 +55,7 @@ public class InsertionSort {
         }
     }
 
-    // The status FLAG CAN COMPLETELY BE REMOVED
+    // The status FLAG CAN COMPLETELY BE REMOVED // OR U CAN USE BREAK  
     public void sort2() {
         int arr[] = { 7, 4, 2, 3, 5 };
 
@@ -73,9 +74,43 @@ public class InsertionSort {
         }
     }
 
+    public void sort3(){
+        int arr[] = {7, 4, 3, 2, 5};
+        for(int i = 0; i<=arr.length-1; i++){
+            for(int j=i; j>0;j--){
+                if(arr[j]<arr[j-1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j-1];
+                    arr[j-1] = temp;
+
+                }
+                else{
+                    break;
+                }
+            }
+        }
+        for(int n: arr){
+            System.out.println(n);
+        }
+    }
+    public void sort4(){
+        int arr[] = {7, 4, 3, 2, 5};
+        for(int i = arr.length-1; i>=0; i--){
+            for(int j = i; j>=0; j--){
+                if(arr[j]<arr[j-1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j-1];
+                    arr[j-1] = temp;
+                }else{
+                    break;
+                }
+
+            }
+        }
+    }
     public static void main(String[] args) {
         InsertionSort obj = new InsertionSort();
-        obj.sort1();
+        obj.sort3();
 
     }
 
