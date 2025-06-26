@@ -1,6 +1,9 @@
 package lectures.class7;
 
 public class BinarySearch {
+    //Theory
+    // array consists of 3,7,11,12,17,20,23,27,29
+    //starting value starts with 0 in
     public void search1(){
         int arr[] = {3, 7, 11, 12, 17, 20, 23, 27, 29};
         int start =0; int end = arr.length-1; 
@@ -19,14 +22,14 @@ public class BinarySearch {
         }
 
     }
-
+    //Binary Search for decending order
     public void search2(){
         int arr[] = {38,28,20,16,4};
         int start = 0; int end = arr.length-1;
         int search = 21;
 
         while(start<=end){
-            int midvalue = start + (end-start/2);
+            int midvalue = start + ((end-start)/2);
 
             if(arr[midvalue] == search){
                 System.out.println(midvalue);
