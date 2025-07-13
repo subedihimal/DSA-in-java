@@ -1,4 +1,4 @@
-package lectures.class8;
+package lectures.c8_practicebinarysearch;
 
 public class PracticeQuestions {
     //Find the start and end index of common element in a sorted array
@@ -188,7 +188,7 @@ public class PracticeQuestions {
     
     public static void main(String[] args) {
         PracticeQuestions obj = new PracticeQuestions();
-        obj.missing();
+        obj.occur2();
     }
     
 }

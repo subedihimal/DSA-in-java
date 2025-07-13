@@ -1,4 +1,4 @@
-package lectures.class1;
+package lectures.c1_datatypes;
 import java.util.Scanner;
 
 public class Datatypes{

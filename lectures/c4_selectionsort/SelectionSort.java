@@ -1,4 +1,4 @@
-package lectures.class4;
+package lectures.c4_selectionsort;
 
 public class SelectionSort {
 

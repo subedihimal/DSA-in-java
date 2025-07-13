@@ -1,4 +1,4 @@
-package lectures.class5;
+package lectures.c5_bubblesort;
 
 public class BubbleSort{
         

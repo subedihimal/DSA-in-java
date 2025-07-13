@@ -1,4 +1,4 @@
-package lectures.class2;
+package lectures.c2_patternprint;
 public class Pattern{
 
     //Normal Pattern

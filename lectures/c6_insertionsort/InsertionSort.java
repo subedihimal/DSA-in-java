@@ -1,4 +1,4 @@
-package lectures.class6;
+package lectures.c6_insertionsort;
 
 public class InsertionSort {
     // THEORY

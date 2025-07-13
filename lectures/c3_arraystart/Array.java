@@ -1,4 +1,4 @@
-package lectures.class3;
+package lectures.c3_arraystart;
 
 import java.util.Arrays;
 

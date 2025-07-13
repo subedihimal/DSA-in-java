@@ -1,4 +1,4 @@
-package lectures.class7;
+package lectures.c7_binarysearch;
 
 public class BinarySearch {
     //Theory
