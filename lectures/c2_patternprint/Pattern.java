@@ -84,8 +84,22 @@ public class Pattern{
             System.out.println();
         }
     }
+    public void pattern9(){
+        int l = 1;
+       for(int i = 1; i<=5; i++){
+        for(int j=5-i; j>=1; j--){
+            System.out.print(' ');
+        }
+        for(int k=1; k<=l; k++){
+            System.out.print('*');
+        }
+        l=l+2;
+        System.out.println();
+       } 
+    }
+
     public static void main(String[] args){
         Pattern obj = new Pattern();
-        obj.pattern8();
+        obj.pattern9();
     }
 }

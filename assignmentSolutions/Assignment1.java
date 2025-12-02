@@ -1,4 +1,3 @@
-package assignmentSolutions;
 import java.util.Scanner;
 
 public class Assignment1 {
