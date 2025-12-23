@@ -97,9 +97,25 @@ public class Pattern{
         System.out.println();
        } 
     }
+    public void pattern10(){
+        for(int i = 1; i<=5; i++){
+            for(int j=5; j>=i; j--){
+                System.out.print(" ");
+            }
+            int k = 0;
+            for(int j= 1; j<=i; j++){
+                System.out.print(j);
+                k=j;
+            }
+            for(int j=k-1; j>=1; j--){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
 
     public static void main(String[] args){
         Pattern obj = new Pattern();
-        obj.pattern9();
+        obj.pattern10();
     }
 }
